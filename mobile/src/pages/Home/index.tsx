@@ -6,8 +6,8 @@ import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
     const navigation = useNavigation();
-    const [uf, setUf] = useState('');
-    const [city, setCIty] = useState('');
+    const [uf, setUf] = useState('SP');
+    const [city, setCIty] = useState('Caraguatatuba');
 
     function handleNavigateToPoints() {
         navigation.navigate('Points', {uf, city});
